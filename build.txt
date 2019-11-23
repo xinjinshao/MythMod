@@ -1,0 +1,3 @@
+displayName = Myth Mode
+author = skypath
+version = 0.1

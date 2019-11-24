@@ -32,7 +32,9 @@ namespace MythMode.Items
                 player.QuickSpawnItem(ItemID.CellPhone);
                 player.QuickSpawnItem(ItemID.FrostsparkBoots);
                 player.QuickSpawnItem(ItemID.CandyCaneSword);
+                player.QuickSpawnItem(ItemID.ReaverShark);
                 player.QuickSpawnItem(ItemID.DogWhistle);
+                player.QuickSpawnItem(ItemID.GoldCoin, 2);
                 player.GetModPlayer<MythPlayer>().chrismasGiftUsed = true;
             }
         }

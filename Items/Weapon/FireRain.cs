@@ -7,29 +7,30 @@ using MythMode.Projectiles;
 
 namespace MythMode.Items.Weapon
 {
-    public class SkyLightning : ModItem
+    public class FireRain : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Power from sky essence.");
+            Tooltip.SetDefault("Power from hell essence.");
         }
 
         public override void SetDefaults()
         {
-            item.damage = 45;
-            item.thrown = true;
+            item.damage = 30;
+            item.magic = true;
+            item.mana = 10;
             item.noMelee = true;
-            item.width = 30;
-            item.height = 30;
-            item.useTime = 10;
+            item.width = 20;
+            item.height = 20;
+            item.useTime = 40;
             item.useAnimation = 25;
             item.useStyle = 5;
             item.knockBack = 10;
             item.value = 10000;
             item.rare = 2;
             item.autoReuse = true;
-            item.shoot = ProjectileType<Lightning>();
-            item.shootSpeed = 20f;
+            item.shoot = ProjectileType<FireDrop>();
+            item.shootSpeed = 5f;
         }
 
         public override void AddRecipes()

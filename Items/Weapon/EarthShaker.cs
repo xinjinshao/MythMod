@@ -7,7 +7,7 @@ using MythMode.Projectiles;
 
 namespace MythMode.Items.Weapon
 {
-    public class LandSword : ModItem
+    public class EarthShaker : ModItem
     {
         public override void SetStaticDefaults()
         {

@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace MythMode.Items.Material
 {
-    class DesertEssence : ModItem
+    class HellEssence : ModItem
     {
         public override void SetStaticDefaults()
         {

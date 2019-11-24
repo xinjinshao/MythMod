@@ -64,7 +64,7 @@ namespace MythMode.NPCs
         public override string GetChat()
         {
             WeightedRandom<string> chat = new WeightedRandom<string>();
-            chat.Add("Offer bags with various loot once you have killed certain bossed. You can buy any bag ONLY ONCE.");
+            chat.Add("Offer bags with various loot once you have killed certain bossed. You can use ONLY ONCE.");
             return chat;
         }
 

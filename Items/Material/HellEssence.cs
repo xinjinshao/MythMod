@@ -7,7 +7,7 @@ namespace MythMode.Items.Material
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Essence from the desert.");
+            Tooltip.SetDefault("Essence from the hell.");
             ItemID.Sets.ItemNoGravity[item.type] = true;
         }
 

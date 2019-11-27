@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MythMode.Items
+namespace MythMod.Items
 {
     public class ChrismasGift : ModItem
     {

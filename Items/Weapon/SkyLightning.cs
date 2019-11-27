@@ -2,10 +2,10 @@
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-using MythMode.Items.Material;
-using MythMode.Projectiles;
+using MythMod.Items.Material;
+using MythMod.Projectiles;
 
-namespace MythMode.Items.Weapon
+namespace MythMod.Items.Weapon
 {
     public class SkyLightning : ModItem
     {

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MythMode.Projectiles
+namespace MythMod.Projectiles
 {
 	public class Lightning : ModProjectile
 	{

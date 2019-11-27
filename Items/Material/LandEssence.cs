@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MythMode.Items.Material
+namespace MythMod.Items.Material
 {
     class LandEssence : ModItem
     {

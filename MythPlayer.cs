@@ -1,7 +1,7 @@
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace MythMode
+namespace MythMod
 {
 	public class MythPlayer : ModPlayer
     {

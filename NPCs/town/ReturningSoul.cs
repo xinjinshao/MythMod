@@ -5,17 +5,17 @@ using Terraria.ModLoader;
 using Terraria.Localization;
 using static Terraria.ModLoader.ModContent;
 
-using MythMode.Projectiles;
+using MythMod.Projectiles;
 
-namespace MythMode.NPCs
+namespace MythMod.NPCs.town
 {
 	// [AutoloadHead] and npc.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 	[AutoloadHead]
 	public class ReturningSoul : ModNPC
 	{
-		public override string Texture => "MythMode/NPCs/town/ReturningSoul";
+		public override string Texture => "MythMod/NPCs/town/ReturningSoul";
 
-		public override string[] AltTextures => new[] { "MythMode/NPCs/town/ReturningSoul" };
+		public override string[] AltTextures => new[] { "MythMod/NPCs/town/ReturningSoul" };
 
 		public override bool Autoload(ref string name) {
 			name = "ReturningSoul";
@@ -55,7 +55,7 @@ namespace MythMode.NPCs
 		}
 
 		public override string TownNPCName() {
-			return "ReturningSoul";
+			return "Ghost";
         }
 
 
@@ -64,7 +64,7 @@ namespace MythMode.NPCs
         public override string GetChat()
         {
             WeightedRandom<string> chat = new WeightedRandom<string>();
-            chat.Add("Offer bags with various loot once you have killed certain bossed. You can use ONLY ONCE.");
+            chat.Add("Offer bags with various loot once you have killed certain bossed. You can open each bag ONLY ONCE.");
             return chat;
         }
 

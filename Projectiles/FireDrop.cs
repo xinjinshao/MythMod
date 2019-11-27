@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace MythMode.Projectiles
+namespace MythMod.Projectiles
 {
 	public class FireDrop : ModProjectile
 	{

@@ -1,1 +1,1 @@
-# MythMode
+# MythMod

@@ -11,7 +11,7 @@ namespace MythMod.NPCs.boss.landguardian
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("LandGuardian");
-            Main.npcFrameCount[npc.type] = 2;
+            Main.npcFrameCount[npc.type] = 1;
         }
 
         public override void SetDefaults()

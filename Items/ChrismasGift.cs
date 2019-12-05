@@ -42,7 +42,8 @@ namespace MythMod.Items
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             bool chrismasGiftUsed = Main.LocalPlayer.GetModPlayer<MythPlayer>().chrismasGiftUsed;
-            if (chrismasGiftUsed) {
+            if (chrismasGiftUsed)
+            {
                 tooltips.Add(new TooltipLine(mod, "NoTwice", "Chrismas Gift can not be used twice."));
             }
         }

@@ -6,20 +6,21 @@ using Terraria.ModLoader;
 
 namespace MythMod.Projectiles
 {
-	public class Lightning : ModProjectile
-	{
+    public class Lightning : ModProjectile
+    {
         public override void SetStaticDefaults()
         {
             ProjectileID.Sets.Homing[projectile.type] = true;
         }
 
-        public override void SetDefaults() {
-			projectile.width = 16;
-			projectile.height = 16;
-			projectile.friendly = true;
-			projectile.thrown = true;
-			projectile.timeLeft = 600;
-		}
+        public override void SetDefaults()
+        {
+            projectile.width = 16;
+            projectile.height = 16;
+            projectile.friendly = true;
+            projectile.thrown = true;
+            projectile.timeLeft = 600;
+        }
 
         public override void AI()
         {
@@ -64,9 +65,10 @@ namespace MythMod.Projectiles
             }
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit) {
-			projectile.ai[0] += 0.1f;
-			projectile.velocity *= 0.75f;
-		}
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+            projectile.ai[0] += 0.1f;
+            projectile.velocity *= 0.75f;
+        }
     }
 }

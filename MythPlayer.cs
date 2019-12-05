@@ -3,14 +3,14 @@ using Terraria.ModLoader.IO;
 
 namespace MythMod
 {
-	public class MythPlayer : ModPlayer
+    public class MythPlayer : ModPlayer
     {
         public bool chrismasGiftUsed;
 
         public override TagCompound Save()
         {
             return new TagCompound {
-				{"chrismasGiftUsed", chrismasGiftUsed},
+                {"chrismasGiftUsed", chrismasGiftUsed},
             };
         }
 

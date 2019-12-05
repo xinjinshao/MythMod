@@ -7,9 +7,10 @@ using static Terraria.ModLoader.ModContent;
 
 namespace MythMod.Projectiles
 {
-	public class FireDrop : ModProjectile
-	{
-		public override void SetDefaults() {
+    public class FireDrop : ModProjectile
+    {
+        public override void SetDefaults()
+        {
             projectile.CloneDefaults(ProjectileID.ImpFireball);
             aiType = ProjectileID.ImpFireball;
             projectile.tileCollide = true;
@@ -23,11 +24,12 @@ namespace MythMod.Projectiles
             return true;
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit) {
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
             for (int i = 0; i < 5; i++)
             {
                 int a = Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y,
-                    Main.rand.Next(-8, 8) * .25f, Main.rand.Next(-8, 8) * .25f, 
+                    Main.rand.Next(-8, 8) * .25f, Main.rand.Next(-8, 8) * .25f,
                     ProjectileID.ImpFireball, (int)(projectile.damage * .5f), 0, projectile.owner);
                 Main.projectile[a].aiStyle = 1;
                 Main.projectile[a].tileCollide = true;

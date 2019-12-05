@@ -3,14 +3,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MythMod.NPCs.boss.landguardian
+namespace MythMod.NPCs.boss.seaguardian
 {
     [AutoloadBossHead]
-    public class LandGuardian : ModNPC
+    public class SeaGuardian : ModNPC
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("LandGuardian");
+            DisplayName.SetDefault("SeaGuardian");
             Main.npcFrameCount[npc.type] = 1;
         }
 
@@ -41,9 +41,9 @@ namespace MythMod.NPCs.boss.landguardian
 
         public override void NPCLoot()
         {
-            if (!MythWorld.landGuardianDefeated)
+            if (!MythWorld.seaGuardianDefeated)
             {
-                MythWorld.landGuardianDefeated = true;
+                MythWorld.seaGuardianDefeated = true;
             }
         }
 

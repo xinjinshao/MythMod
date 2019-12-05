@@ -15,8 +15,8 @@ namespace MythMod.Projectiles
 
         public override void SetDefaults()
         {
-            projectile.width = 16;
-            projectile.height = 16;
+            projectile.width = 14;
+            projectile.height = 35;
             projectile.friendly = true;
             projectile.thrown = true;
             projectile.timeLeft = 600;

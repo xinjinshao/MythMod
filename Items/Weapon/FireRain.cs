@@ -20,8 +20,8 @@ namespace MythMod.Items.Weapon
             item.magic = true;
             item.mana = 10;
             item.noMelee = true;
-            item.width = 20;
-            item.height = 20;
+            item.width = 35;
+            item.height = 35;
             item.useTime = 40;
             item.useAnimation = 25;
             item.useStyle = 5;

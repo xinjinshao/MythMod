@@ -18,8 +18,8 @@ namespace MythMod.Items.Weapon
         {
             item.damage = 50;
             item.melee = true;
-            item.width = 40;
-            item.height = 40;
+            item.width = 50;
+            item.height = 50;
             item.useTime = 20;
             item.useAnimation = 20;
             item.useStyle = 1;

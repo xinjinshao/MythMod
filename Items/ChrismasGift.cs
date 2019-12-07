@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
+
+using MythMod.Items.Pets;
 
 namespace MythMod.Items
 {
@@ -33,7 +36,7 @@ namespace MythMod.Items
                 player.QuickSpawnItem(ItemID.FrostsparkBoots);
                 player.QuickSpawnItem(ItemID.CandyCaneSword);
                 player.QuickSpawnItem(ItemID.ReaverShark);
-                player.QuickSpawnItem(ItemID.DogWhistle);
+                player.QuickSpawnItem(ItemType<LoLPet>());
                 player.QuickSpawnItem(ItemID.GoldCoin, 2);
                 player.GetModPlayer<MythPlayer>().chrismasGiftUsed = true;
             }

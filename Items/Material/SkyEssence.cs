@@ -1,4 +1,6 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
+using Terraria.DataStructures;
 using Terraria.ModLoader;
 
 namespace MythMod.Items.Material
@@ -8,6 +10,7 @@ namespace MythMod.Items.Material
         public override void SetStaticDefaults()
         {
             Tooltip.SetDefault("Essence from the sky.");
+            Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(10, 4));
             ItemID.Sets.ItemNoGravity[item.type] = true;
         }
 

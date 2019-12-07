@@ -18,8 +18,8 @@ namespace MythMod.Items
 
         public override void SetDefaults()
         {
-            item.width = 20;
-            item.height = 20;
+            item.width = 30;
+            item.height = 30;
             item.rare = 2;
         }
 

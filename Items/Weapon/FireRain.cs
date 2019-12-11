@@ -36,7 +36,7 @@ namespace MythMod.Items.Weapon
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemType<SkyEssence>(), 10);
+            recipe.AddIngredient(ItemType<HellEssence>(), 10);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
